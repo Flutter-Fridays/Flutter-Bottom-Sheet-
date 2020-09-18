@@ -18,3 +18,4 @@ Firstly, let's look at the code that shows the bottom sheet below.
 ```
 Scaffold.of(context).showBottomSheet<T>(builder)
 ```
+This implies that we need to show our bottomsheet **only inside a scaffold** otherwise the app will crash.
