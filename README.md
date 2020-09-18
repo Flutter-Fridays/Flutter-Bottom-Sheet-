@@ -14,3 +14,7 @@ There are 2 types of Bottom Sheet
    * Modal bottom sheets can be created and displayed with the **showModalBottomSheet** function.
 
 ## Implementing Bottom Sheet
+Firstly, let's look at the code that shows the bottom sheet below.
+```
+Scaffold.of(context).showBottomSheet<T>(builder)
+```
