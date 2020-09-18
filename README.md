@@ -7,4 +7,5 @@ Bottom sheet is a widget that slides up from the bottom of the screen to reveal 
 ## Types of Bottom Sheet
 There are 2 types of Bottom Sheet
 1. Persistent
+  * H
 2. Modal
