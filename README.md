@@ -1,4 +1,4 @@
-# Flutter-Bottom-Sheet-
+# Flutter Bottom Sheet
 In this tutorial, we walk you through how to use bottom sheet in Flutter.
 
 ## What is Bottom Sheet?
@@ -13,3 +13,4 @@ There are 2 types of Bottom Sheet
    * Modal Bottomsheet **does not** allows you to **interact** with other parts of the app.
    * Modal bottom sheets can be created and displayed with the **showModalBottomSheet** function.
 
+## Implementing Bottom Sheet
