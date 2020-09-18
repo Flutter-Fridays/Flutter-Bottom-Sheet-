@@ -19,3 +19,33 @@ Firstly, let's look at the code that shows the bottom sheet below.
 Scaffold.of(context).showBottomSheet<T>(builder)
 ```
 This implies that we need to show our bottomsheet **only inside a scaffold** otherwise the app will crash.
+There are diffrent ways to solve this issue, but we'll teach you only the recommended method for building Bottom Sheet.
+Our implementation method will required us to build a Bottom Sheet **under a piece of Widget**.This way we can avoid the context problem from either the Navigator or Scaffold.
+
+```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      floatingActionButton: MyFloatingActionButton(),
+      body: Center(
+        child: Text('Bottom Sheet'),
+      ),
+    );
+  }
+}
+class MyFloatingActionButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      onPressed: () {
+        showBottomSheet(
+            context: context,
+            builder: (context) => Container(
+                  color: Colors.green,
+                ));
+      },
+    );
+  }
+}
+```
